@@ -5,6 +5,7 @@ TITLE: Check initialized database structure and test data
 DESCRIPTION: Verify that the database created by Firebird QA contains the expected tables, rows, indexes, and relations.
 """
 
+import pytest
 from firebird.qa import *
 from tests.support import load_initialization_script
 

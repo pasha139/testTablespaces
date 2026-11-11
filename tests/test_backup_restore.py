@@ -5,6 +5,7 @@ TITLE: Check database backup and restore with gbak
 DESCRIPTION: Create a backup of the initialized test database, restore it to a new database file, and verify restored data and metadata.
 """
 
+import pytest
 from firebird.qa import *
 from firebird.driver import connect
 from tests.support import load_initialization_script

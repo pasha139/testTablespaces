@@ -1,5 +1,0 @@
-[local]
-host = localhost
-port = 3050
-user = SYSDBA
-password = masterkey
