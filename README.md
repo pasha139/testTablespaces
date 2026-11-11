@@ -28,3 +28,44 @@
 - доступные утилиты Firebird, включая `gbak`;
 - учётная запись Firebird с правами на создание тестовых баз.
 - готовый firebird-driver.conf
+
+
+
+## Установка на macOS
+
+Создайте виртуальное окружение:
+
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+```
+
+Установите зависимости:
+
+```bash
+pip install -r requirements.txt
+```
+
+Откройте `firebird-driver.conf` и укажите параметры своего локального сервера Firebird:
+
+```ini
+[local]
+host = localhost
+port = 3050
+user = SYSDBA
+password = masterkey
+```
+
+Запустите тесты:
+
+```bash
+pytest
+```
+
+Firebird QA добавляет в pytest параметр `--server`, а `pytest.ini` уже задаёт `local`.
+
+Для подробного вывода:
+
+```bash
+pytest -v
+```
