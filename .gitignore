@@ -1,0 +1,10 @@
+.venv/
+__pycache__/
+.pytest_cache/
+*.py[cod]
+firebird-driver.conf
+*.fdb
+*.fbk
+*.log
+.DS_Store
+README.md
