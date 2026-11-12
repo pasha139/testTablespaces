@@ -69,3 +69,7 @@ Firebird QA добавляет в pytest параметр `--server`, а `pytest
 ```bash
 pytest -v
 ```
+
+Мой вывод:
+<img width="1454" height="709" alt="image" src="https://github.com/user-attachments/assets/b47f2eb0-fa76-4824-9a63-6a6b2b9c1dbc" />
+
