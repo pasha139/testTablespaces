@@ -9,3 +9,4 @@ firebird-driver.conf
 *.log
 .DS_Store
 README.md
+*.html
